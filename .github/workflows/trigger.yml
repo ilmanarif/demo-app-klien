@@ -13,4 +13,4 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
           repository: ilmanarif/saucedemo-playwright-automation
-          event_type: run-automation
+          event-type: run-automation
