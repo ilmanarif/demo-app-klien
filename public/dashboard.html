@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Katalog Produk</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .product-card h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        .btn-cart {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-cart:hover {
+            background-color: #218838;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 40px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Katalog Produk Demo</h1>
+        <p>Selamat datang di halaman utama aplikasi simulasi.</p>
+    </div>
+
+    <div class="container">
+        <div class="product-card">
+            <h3>Produk Demo 1</h3>
+            <p>Rp 150.000</p>
+            <button class="btn-cart" id="add-to-cart-item-1">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <a href="checkout.html" id="checkout-link">Lanjut ke Halaman Checkout &rarr;</a>
+    </div>
+</body>
+</html>
