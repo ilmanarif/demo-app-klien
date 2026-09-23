@@ -11,6 +11,6 @@ jobs:
       - name: Send Repository Dispatch Event
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           repository: ilmanarif/saucedemo-playwright-automation
           event-type: run-automation
